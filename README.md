@@ -1,59 +1,99 @@
-# Cellphone Price Prediction
+Chennai House Price Prediction
 
-## Overview
-This project analyzes a dataset of mobile phone features to explore their relationships with price categories. The goal is to identify patterns and build predictive models that classify mobile phones into different price ranges.
+Overview
 
-## Dataset
+This project focuses on analyzing and predicting house prices in Chennai based on various features. The objective is to understand key factors influencing house prices and develop predictive models for accurate pricing.
+
+Dataset
+
 The dataset contains the following attributes:
-- **battery_power**: Battery capacity in mAh.
-- **blue**: Bluetooth support (1 = Yes, 0 = No).
-- **clock_speed**: Processor speed in GHz.
-- **dual_sim**: Dual SIM support (1 = Yes, 0 = No).
-- **fc**: Front camera megapixels.
-- **four_g**: 4G support (1 = Yes, 0 = No).
-- **int_memory**: Internal memory in GB.
-- **m_dep**: Mobile depth in cm.
-- **mobile_wt**: Weight of the phone in grams.
-- **n_cores**: Number of processor cores.
-- **pc**: Primary camera megapixels.
-- **px_height**: Pixel resolution height.
-- **px_width**: Pixel resolution width.
-- **ram**: RAM in MB.
-- **sc_h**: Screen height in cm.
-- **sc_w**: Screen width in cm.
-- **talk_time**: Battery talk time in hours.
-- **three_g**: 3G support (1 = Yes, 0 = No).
-- **touch_screen**: Touchscreen support (1 = Yes, 0 = No).
-- **wifi**: WiFi support (1 = Yes, 0 = No).
-- **price_range**: Target variable (0 = Low, 1 = Medium, 2 = High, 3 = Very High).
 
-## Objectives
-1. Understand the relationships between mobile phone features and their impact on price range.
-2. Visualize the data to uncover insights.
-3. Build machine learning models for price range classification.
+area_type: Type of the area (e.g., Super Built-up Area, Built-up Area).
 
-## Visualizations
-The project includes several meaningful visualizations:
-- Distribution of price ranges.
-- Box plots for features like RAM and battery capacity.
-- Scatter plots for screen resolution and talk time vs. battery power.
-- Correlation heatmaps to identify significant relationships.
-- Bar charts showing the impact of features like core count, dual SIM, and connectivity options.
+availability: Availability status of the property.
 
-## Tools and Libraries
-- **Python**: Core programming language.
-- **Pandas**: For data manipulation.
-- **Matplotlib & Seaborn**: For data visualization.
-- **Scikit-learn**: For machine learning and feature importance.
+location: Location of the property.
 
-## Project Workflow
-1. **Data Cleaning**: Ensure all features are properly formatted and handle missing values if any.
-2. **Exploratory Data Analysis (EDA)**: Generate meaningful insights through visualizations.
-3. **Feature Engineering**: Identify important features for prediction.
-4. **Model Building**: Train models to classify phones into price categories.
-5. **Evaluation**: Assess model performance using appropriate metrics.
+size: Number of bedrooms (e.g., 2 BHK, 3 BHK).
 
-## How to Use
-1. Clone the repository:
-   ```bash
-   git clone <repository-link>
+society: Name of the society (if applicable).
+
+total_sqft: Total square footage of the property.
+
+bath: Number of bathrooms.
+
+balcony: Number of balconies.
+
+price: Price of the property (target variable).
+
+Objectives
+
+Explore the relationships between property features and their prices.
+
+Visualize the distribution and trends in the data.
+
+Build predictive models to estimate house prices based on given features.
+
+Visualizations
+
+The project includes the following visualizations:
+
+Distribution of house prices.
+
+Scatter plots for total square footage vs. price.
+
+Box plots for price by area type and number of bedrooms.
+
+Heatmap showing correlations between numerical features.
+
+Bar charts for categorical variables like location and availability.
+
+Tools and Libraries
+
+Python: Core programming language.
+
+Pandas: For data manipulation.
+
+Matplotlib & Seaborn: For data visualization.
+
+Scikit-learn: For machine learning and feature importance.
+
+Project Workflow
+
+Data Cleaning: Handle missing values, incorrect entries, and inconsistent formatting.
+
+Exploratory Data Analysis (EDA): Generate insights and visualize patterns.
+
+Feature Engineering: Create or transform features for better predictions.
+
+Model Building: Train models to predict house prices.
+
+Evaluation: Use metrics like RMSE, MAE, and R-squared to assess model performance.
+
+How to Use
+
+Clone the repository:
+
+git clone <repository-link>
+
+Install the required libraries:
+
+pip install -r requirements.txt
+
+Run the Jupyter Notebook:
+
+jupyter notebook "Chennai House Price Prediction.ipynb"
+
+Explore visualizations and predictions.
+
+Future Work
+
+Incorporate additional features like neighborhood amenities and market trends.
+
+Experiment with advanced machine learning models for better accuracy.
+
+Deploy the model as a web-based application for user interaction.
+
+License
+
+This project is licensed under the MIT License. See LICENSE for details.
